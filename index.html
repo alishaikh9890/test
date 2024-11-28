@@ -6,6 +6,54 @@
     <title>Document</title>
 </head>
 <body>
+
+
+    <button id="btn">click</button>
+
+    <div class="box"></div>
+
+    <hr/>
+
+
+    <button class="btn2">click2</button>
+
+    <h1>CHanging the css</h1>
+
+    <hr/>
+
+    <button class="add">Add</button>
+
+
+    <hr/>
+
+    <div class="container">
+        <div class="sub-container">
+            <img src="https://themewagon.github.io/PestKit/img/about-img.jpg"/>
+        </div>
+    </div>
     
+
+
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+<script>
+$("#btn").click(function(){
+    $(".box").fadeToggle(2000);
+})
+
+$(".btn2").click(function(){
+    $("h1").css({"color":"red", "background-color":"gainsboro"})
+})
+
+$(".add").click(function(){
+    $("body").addClass("bg");
+    $("h1").addClass("cwhite")
+})
+
+
+</script>
 </html>
